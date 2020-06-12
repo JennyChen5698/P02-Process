@@ -1,0 +1,194 @@
+/* 
+Jenny Chen 301285342
+
+References:
+
+Color Reference: https://html-color-codes.info 
+Font Family Reference: https://www.w3schools.com/cssref/css_websafe_fonts.asp
+Buttons Reference: https://www.w3schools.com/css/css3_buttons.asp
+Min-width Cite from lecture
+Box-sizing Reference: https://www.w3schools.com/cssref/css3_pr_box-sizing.asp
+Column Referene: https://www.w3schools.com/cssref/css3_pr_columns.asp
+*/
+
+body {
+    font-family: Georgia, serif;
+    background-color:#FBFAF8;
+    padding: 5rem;
+} 
+
+.element {
+    padding-bottom: 2rem;
+    border-top-width: 0.15rem;
+    border-top-style:dotted;
+    border-top-color: black;
+}
+
+.top_nav{
+    display:flex;
+    list-style-type:none;
+    justify-content: space-between;
+    font-size:1.1rem;
+    background-color:#EBE2D2;
+    padding:1rem;
+}
+
+a {
+    color: saddlebrown;
+	transition: color 0.5s;
+}
+a:active, a:hover, a:focus {
+    color: darkkhaki;
+	text-decoration: none;
+}
+
+h2 {
+    margin-top: 6rem;
+}
+
+h3 {
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+h4 {
+    margin-bottom: 0.25rem;
+}
+
+section code {
+    background-color: #EEE;
+    padding: 0.5rem;
+    display: block;
+}
+
+img{
+    width:100%;
+    height:100%;
+}
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the Call to Action Button */
+.action_button {
+    display: inline-block;
+    padding: 0.5rem;
+    color: #745F40;
+    text-decoration:underline;
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+}
+.action_button:hover, .action_button:focus {
+    background-color: #A79579;
+    color:#4D463D;
+}
+
+
+/* Styling for the Reset and Submit Button */
+section .resetSubmit_button{
+	background-color:#D2BE9F;
+	color:#8A4B08;
+	width:10rem;
+	transition: 0.3s;
+}
+
+ section .resetSubmit_button:hover{
+	background-color:#8A4B08;
+	color:#FFBF00;
+}
+
+ section .resetSubmit_button:hover, section .resetSubmit_button:focus{
+    text-decoration: underline;
+}
+
+
+/* Styling for Website Colour Swatches */
+section .container .block1, .block2, .block3, .block4{
+	height:200px;
+    display:flex;
+    flex-wrap: column wrap;
+    border-style:solid;
+    border-width: 1px;
+}
+
+section .container .block1{
+	background-color:white;
+}
+
+section .container .block2{
+	background-color:#EBE2D2;
+}
+
+section .container .block3{
+	background-color:#AF946A;
+}
+
+section .container .block4{
+	background-color:#483A25;
+}
+
+section .container p {
+    padding-left: 0.5rem;
+} 
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+/* Re-styling for Rendered 3 Level of heading */
+.newMargin{
+    margin-top:1rem;
+}
+.specialCSS{
+    margin-top:1rem;
+    font-style:normal; 
+}
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.nav_button {
+    display: inline-block;
+    padding: 0.5rem;
+    color: white;
+    background-color: #A79579;
+    text-decoration: none;
+    transition-property: background-color; 
+    transition-duration: 0.5s;
+    margin-right:1rem;
+    margin-top:1rem; 
+}
+.nav_button:hover, .nav_button:focus {
+    background-color: #D7CAA3;
+    color:#614E30;
+}
+
+
+/* Styling for Payment Form */
+.paymentMethod{
+    display:flex;
+    flex-flow:column wrap;
+    margin-bottom: 1rem;
+}
+
+.paymentForm input{
+margin-top:0.2rem;
+}
+
+
+/* Flexbox */
+@media (min-width: 35em){ 
+	*, *::after, *::before{ 
+		box-sizing: border-box; 
+	}
+
+	div{
+		columns:4; 
+	}
+}
